@@ -1,5 +1,7 @@
 # rogeriodocarmo.github.io
 
+🌐 **Live:** <https://rogeriodocarmo.github.io/>
+
 Personal hub for **Rogério do Carmo**. It informs about my work, points to my
 main site [rogeriodocarmo.com](https://rogeriodocarmo.com), links my projects,
 and permanently hosts documents I need to keep online.

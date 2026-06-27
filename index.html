@@ -159,7 +159,9 @@
       <header>
         <h1>Rogério do Carmo</h1>
         <p class="tagline" data-i18n="tagline">React Native Senior Developer.</p>
-        <a class="cta" href="https://rogeriodocarmo.com" data-i18n="cta">Visit my main site →</a>
+        <a class="cta" href="https://rogeriodocarmo.com/en/" data-i18n="cta" data-site-link
+          >Visit my main site →</a
+        >
       </header>
 
       <h2 data-i18n="resume">Résumé</h2>
@@ -208,7 +210,7 @@
       </div>
 
       <footer>
-        <a href="https://rogeriodocarmo.com">rogeriodocarmo.com</a>
+        <a href="https://rogeriodocarmo.com/en/" data-site-link>rogeriodocarmo.com</a>
         <a href="https://github.com/RogerioDoCarmo">GitHub</a>
         <a href="https://www.linkedin.com/in/rogeriodocarmo/">LinkedIn</a>
         <a href="https://linktr.ee/rogeriodocarmo">Linktree</a>
@@ -222,6 +224,7 @@
         en: {
           meta_desc:
             "Rogério do Carmo — developer. Projects, apps, and official documents. Main site: rogeriodocarmo.com",
+          site: "https://rogeriodocarmo.com/en/",
           tagline: "React Native Senior Developer.",
           cta: "Visit my main site →",
           resume: "Résumé",
@@ -242,6 +245,7 @@
         pt: {
           meta_desc:
             "Rogério do Carmo — desenvolvedor. Projetos, apps e documentos oficiais. Site principal: rogeriodocarmo.com",
+          site: "https://rogeriodocarmo.com/pt-BR/",
           tagline: "Desenvolvedor Sênior React Native.",
           cta: "Acessar meu site principal →",
           resume: "Currículo",
@@ -262,6 +266,7 @@
         es: {
           meta_desc:
             "Rogério do Carmo — desarrollador. Proyectos, apps y documentos oficiales. Sitio principal: rogeriodocarmo.com",
+          site: "https://rogeriodocarmo.com/es/",
           tagline: "Desarrollador Senior React Native.",
           cta: "Visitar mi sitio principal →",
           resume: "Currículum",
@@ -293,6 +298,11 @@
         });
         const meta = document.querySelector('meta[name="description"]');
         if (meta && dict.meta_desc) meta.setAttribute("content", dict.meta_desc);
+        if (dict.site) {
+          document
+            .querySelectorAll("[data-site-link]")
+            .forEach((a) => a.setAttribute("href", dict.site));
+        }
         langButtons.forEach((b) => {
           const active = b.dataset.lang === lang;
           b.classList.toggle("active", active);
