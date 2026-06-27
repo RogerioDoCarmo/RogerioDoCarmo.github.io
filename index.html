@@ -1,81 +1,320 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-	<head>
-		<meta charset="utf-8">
-		<title>Evento</title>
-		<link rel="stylesheet" type="text/css" href="css/base/base.css">
-		<link rel="stylesheet" type="text/css" href="css/layout/header.css">
-		<link rel="stylesheet" type="text/css" href="css/layout/footer.css">
-		<link rel="stylesheet" type="text/css" href="css/modules/menu.css">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rogério do Carmo</title>
+    <meta
+      name="description"
+      content="Rogério do Carmo — developer. Projects, apps, and official documents. Main site: rogeriodocarmo.com"
+    />
+    <link rel="canonical" href="https://rogeriodocarmo.github.io/" />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #ffffff;
+        --fg: #1a1a1a;
+        --muted: #5a5a5a;
+        --accent: #6fb0fa;
+        --card: #f6f8fb;
+        --border: #e3e8ef;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0e1116;
+          --fg: #e6e6e6;
+          --muted: #9aa4b2;
+          --accent: #6fb0fa;
+          --card: #161b22;
+          --border: #262d36;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+          sans-serif;
+      }
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 48px 24px 80px;
+      }
+      .lang-switch {
+        display: flex;
+        gap: 6px;
+        justify-content: flex-end;
+        margin-bottom: 8px;
+      }
+      .lang-switch button {
+        background: transparent;
+        color: var(--muted);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 4px 10px;
+        font: inherit;
+        font-size: 0.8rem;
+        cursor: pointer;
+      }
+      .lang-switch button.active {
+        color: var(--accent);
+        border-color: var(--accent);
+        font-weight: 600;
+      }
+      header {
+        border-bottom: 4px solid var(--accent);
+        padding-bottom: 20px;
+        margin-bottom: 8px;
+      }
+      h1 {
+        margin: 0 0 6px;
+        font-size: 2.2rem;
+      }
+      .tagline {
+        color: var(--muted);
+        margin: 0;
+      }
+      h2 {
+        margin-top: 44px;
+        font-size: 1.2rem;
+      }
+      a {
+        color: var(--accent);
+      }
+      .cta {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 22px;
+        background: var(--accent);
+        color: #0e1116;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 10px;
+      }
+      .cards {
+        display: grid;
+        gap: 16px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 18px 20px;
+      }
+      .card h3 {
+        margin: 0 0 4px;
+        font-size: 1.05rem;
+      }
+      .card p {
+        margin: 0 0 10px;
+        color: var(--muted);
+      }
+      .card .links a {
+        margin-right: 16px;
+        font-size: 0.92rem;
+        white-space: nowrap;
+      }
+      .placeholder {
+        color: var(--muted);
+        font-style: italic;
+      }
+      .badge {
+        display: inline-block;
+        font-size: 0.7rem;
+        font-weight: 600;
+        vertical-align: middle;
+        color: var(--accent);
+        border: 1px solid var(--accent);
+        border-radius: 999px;
+        padding: 1px 8px;
+        margin-left: 6px;
+      }
+      footer {
+        margin-top: 56px;
+        color: var(--muted);
+        font-size: 0.85rem;
+        border-top: 1px solid var(--border);
+        padding-top: 16px;
+      }
+      footer a {
+        margin-right: 16px;
+      }
+      .copyright {
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav class="lang-switch" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+        <button type="button" data-lang="es" aria-pressed="false">ES</button>
+      </nav>
 
-	</head>
-	<body>
-		<header>
-			<div class="barra-superior">
-				<a href="https://www.facebook.com/secompp"><div class="redes-sociais face"></div></a>
-				<a href="http://www.twiter.com"><div class="redes-sociais twitter"></div></a>
-				<a href="http://www.youtube.com"><div class="redes-sociais youtube"></div></a>
-			</div>
+      <header>
+        <h1>Rogério do Carmo</h1>
+        <p class="tagline" data-i18n="tagline">React Native Senior Developer.</p>
+        <a class="cta" href="https://rogeriodocarmo.com" data-i18n="cta">Visit my main site →</a>
+      </header>
 
-			<div class="cabecalho-principal">
-				<h1>SECOMPP</h1>
-			</div>
-		</header>
+      <h2 data-i18n="resume">Résumé</h2>
+      <div class="cards">
+        <div class="card">
+          <h3 data-i18n="resume_title">Download my résumé</h3>
+          <p data-i18n="resume_desc">Available in English, Portuguese, and Spanish.</p>
+          <div class="links">
+            <a href="resumes/resume-en.pdf">English (PDF)</a>
+            <a href="resumes/resume-pt-BR.pdf">Português (PDF)</a>
+            <a href="resumes/resume-es.pdf">Español (PDF)</a>
+          </div>
+        </div>
+      </div>
 
-		<ul class="menu-principal">
-			<li class="menu-item"><a href="index.html">Home</a></li>
-			<li class="menu-item"><a href="sobre.html">Sobre</a></li>
-			<li class="menu-item"><a href="programacao.html">Programação</a></li>
-			<li class="menu-item"><a href="inscricao.html">Inscrições</a></li>
-			<li class="menu-item">Organização
-				<ul class="sub-menu">
-					<li class="menu-item"><a href="comissao.html">Comissão Organizadora</a></li>
-				</ul>
-			</li>
-			<li class="menu-item">Galeria
-				<ul class="sub-menu">
-					<li class="menu-item"><a href="fotos.html">Fotos e Videos</a></li>
-					<li class="menu-item"><a href="artigo.html">Artigos</a></li>
-				</ul>
-			</li>			
-			<li class="menu-item"><a href="endereco.html">Endereço</a></li>
-		</ul>
+      <h2 data-i18n="projects">Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Miroji <span class="badge" data-i18n="in_dev">In development</span></h3>
+          <p data-i18n="miroji_desc">
+            A simple, private front-camera mirror app. Nothing is collected, recorded, or sent.
+          </p>
+          <div class="links">
+            <!-- When published, add the store links here, e.g.:
+                 <a href="https://apps.apple.com/app/idXXXXXXXX">App Store</a>
+                 <a href="https://play.google.com/store/apps/details?id=...">Google Play</a> -->
+            <a href="mirror_app/privacy-policy.html" data-i18n="privacy">Privacy Policy</a>
+          </div>
+        </div>
 
-	<section>
-		<div class="bloco-noticia">
+        <div class="card">
+          <h3 class="placeholder" data-i18n="more_title">More projects coming soon</h3>
+          <p class="placeholder" data-i18n="more_desc">Other projects will be listed here.</p>
+        </div>
+      </div>
 
-			<a href="sobre.html"><div class="noticia noticia-a tamanho-pequeno"></div></a>
-			<a href="programacao.html"><div class="noticia noticia-a tamanho-pequeno"></div></a>
-			<a href="sobre.html"><div class="noticia noticia-b tamanho-pequeno"></div></a>
-			<a href="fotos.html"><div class="noticia noticia-c tamanho-grande"></div></a>
-		</div>
-	</section>
+      <h2 data-i18n="documents">Documents</h2>
+      <div class="cards">
+        <div class="card">
+          <h3 data-i18n="docs_title">App privacy policies</h3>
+          <p data-i18n="docs_desc">Official, permanently-hosted policy documents.</p>
+          <div class="links">
+            <a href="mirror_app/privacy-policy.html" data-i18n="miroji_pp">Miroji — Privacy Policy</a>
+          </div>
+        </div>
+      </div>
 
-	<footer>
+      <footer>
+        <a href="https://rogeriodocarmo.com">rogeriodocarmo.com</a>
+        <a href="https://github.com/RogerioDoCarmo">GitHub</a>
+        <a href="https://www.linkedin.com/in/rogeriodocarmo/">LinkedIn</a>
+        <a href="https://linktr.ee/rogeriodocarmo">Linktree</a>
+        <a href="mailto:contact@rogeriodocarmo.com">contact@rogeriodocarmo.com</a>
+        <div class="copyright">© 2026 Rogério do Carmo</div>
+      </footer>
+    </main>
 
-		<div class="descricao">
-			<div class="grupo-dupla">
-				<h1>Quem somos?</h1>
-				<p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-			<div class="grupo-dupla">
-				<h1>Contato</h1>
-				<p><br>Telefone: (18) 3821-3682 <br>E-mail:
-				admin@teste.org</p>
-			</div>
-		</div>
-		<div class="barra-inferior">
-			<p>Universidade Estadual Paulista - 
-				Faculdade de Ciências e Tecnologia</p>
-				<div class="scroll"><img src="css/images/up.png" width="40" height="40"></div>
-		</div>
+    <script>
+      const i18n = {
+        en: {
+          meta_desc:
+            "Rogério do Carmo — developer. Projects, apps, and official documents. Main site: rogeriodocarmo.com",
+          tagline: "React Native Senior Developer.",
+          cta: "Visit my main site →",
+          resume: "Résumé",
+          resume_title: "Download my résumé",
+          resume_desc: "Available in English, Portuguese, and Spanish.",
+          projects: "Projects",
+          in_dev: "In development",
+          miroji_desc:
+            "A simple, private front-camera mirror app. Nothing is collected, recorded, or sent.",
+          privacy: "Privacy Policy",
+          more_title: "More projects coming soon",
+          more_desc: "Other projects will be listed here.",
+          documents: "Documents",
+          docs_title: "App privacy policies",
+          docs_desc: "Official, permanently-hosted policy documents.",
+          miroji_pp: "Miroji — Privacy Policy",
+        },
+        pt: {
+          meta_desc:
+            "Rogério do Carmo — desenvolvedor. Projetos, apps e documentos oficiais. Site principal: rogeriodocarmo.com",
+          tagline: "Desenvolvedor Sênior React Native.",
+          cta: "Acessar meu site principal →",
+          resume: "Currículo",
+          resume_title: "Baixe meu currículo",
+          resume_desc: "Disponível em inglês, português e espanhol.",
+          projects: "Projetos",
+          in_dev: "Em desenvolvimento",
+          miroji_desc:
+            "Um app de espelho com a câmera frontal, simples e privado. Nada é coletado, gravado ou enviado.",
+          privacy: "Política de Privacidade",
+          more_title: "Mais projetos em breve",
+          more_desc: "Outros projetos serão listados aqui.",
+          documents: "Documentos",
+          docs_title: "Políticas de privacidade dos apps",
+          docs_desc: "Documentos oficiais de política, hospedados permanentemente.",
+          miroji_pp: "Miroji — Política de Privacidade",
+        },
+        es: {
+          meta_desc:
+            "Rogério do Carmo — desarrollador. Proyectos, apps y documentos oficiales. Sitio principal: rogeriodocarmo.com",
+          tagline: "Desarrollador Senior React Native.",
+          cta: "Visitar mi sitio principal →",
+          resume: "Currículum",
+          resume_title: "Descarga mi currículum",
+          resume_desc: "Disponible en inglés, portugués y español.",
+          projects: "Proyectos",
+          in_dev: "En desarrollo",
+          miroji_desc:
+            "Una app de espejo con la cámara frontal, simple y privada. No se recopila, graba ni envía nada.",
+          privacy: "Política de Privacidad",
+          more_title: "Más proyectos próximamente",
+          more_desc: "Aquí se listarán otros proyectos.",
+          documents: "Documentos",
+          docs_title: "Políticas de privacidad de las apps",
+          docs_desc: "Documentos oficiales de política, alojados de forma permanente.",
+          miroji_pp: "Miroji — Política de Privacidad",
+        },
+      };
 
-	</footer>
+      const langButtons = document.querySelectorAll(".lang-switch button");
 
-	</body>
+      function setLang(lang) {
+        if (!i18n[lang]) lang = "en";
+        const dict = i18n[lang];
+        document.documentElement.lang = lang === "pt" ? "pt-br" : lang;
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (dict[key] != null) el.textContent = dict[key];
+        });
+        const meta = document.querySelector('meta[name="description"]');
+        if (meta && dict.meta_desc) meta.setAttribute("content", dict.meta_desc);
+        langButtons.forEach((b) => {
+          const active = b.dataset.lang === lang;
+          b.classList.toggle("active", active);
+          b.setAttribute("aria-pressed", String(active));
+        });
+        try {
+          localStorage.setItem("lang", lang);
+        } catch (e) {
+          /* ignore */
+        }
+      }
+
+      langButtons.forEach((b) => b.addEventListener("click", () => setLang(b.dataset.lang)));
+
+      // Default English; remember the user's manual choice. No auto-detection.
+      let saved = "en";
+      try {
+        saved = localStorage.getItem("lang") || "en";
+      } catch (e) {
+        /* ignore */
+      }
+      setLang(saved);
+    </script>
+  </body>
 </html>
