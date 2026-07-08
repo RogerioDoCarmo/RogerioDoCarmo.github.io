@@ -1,5 +1,26 @@
 # rogeriodocarmo.github.io
 
+<!-- Build & Deployment Status -->
+
+[![Pages Build & Deployment](https://github.com/RogerioDoCarmo/RogerioDoCarmo.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/RogerioDoCarmo/RogerioDoCarmo.github.io/actions/workflows/pages/pages-build-deployment)
+
+<!-- Tech Stack -->
+
+[![HTML5](https://img.shields.io/badge/HTML5-Static-e34f26?logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-Static-1572b6?logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
+[![GitHub Pages](https://img.shields.io/badge/Hosted_on-GitHub_Pages-222?logo=github&logoColor=white)](https://rogeriodocarmo.github.io/)
+
+<!-- Project Info -->
+
+[![GitHub Stars](https://img.shields.io/github/stars/RogerioDoCarmo/RogerioDoCarmo.github.io?cacheSeconds=3600)](https://github.com/RogerioDoCarmo/RogerioDoCarmo.github.io/stargazers)
+[![Open Issues](https://img.shields.io/github/issues/RogerioDoCarmo/RogerioDoCarmo.github.io)](https://github.com/RogerioDoCarmo/RogerioDoCarmo.github.io/issues)
+[![Code Size](https://img.shields.io/github/languages/code-size/RogerioDoCarmo/RogerioDoCarmo.github.io)](https://github.com/RogerioDoCarmo/RogerioDoCarmo.github.io)
+[![Last Commit](https://img.shields.io/github/last-commit/RogerioDoCarmo/RogerioDoCarmo.github.io)](https://github.com/RogerioDoCarmo/RogerioDoCarmo.github.io/commits/master)
+
+<!-- AI Development Tools -->
+
+[![Built with Claude Code](https://img.shields.io/badge/Built_with-Claude_Code-D97706?logo=anthropic&logoColor=white)](https://claude.ai/code)
+
 🌐 **Live:** <https://rogeriodocarmo.github.io/>
 
 Personal hub for **Rogério do Carmo**. It informs about my work, points to my
