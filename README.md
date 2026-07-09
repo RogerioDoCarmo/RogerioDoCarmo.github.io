@@ -1,5 +1,9 @@
 # rogeriodocarmo.github.io
 
+## 📱 Miroji is available now
+
+[![Download on the App Store](https://toolbox.marketingtools.apple.com/api/badges/download-on-the-app-store/black/en-us?size=165x55)](https://apps.apple.com/app/id6774924907)
+
 <!-- Build & Deployment Status -->
 
 [![Pages Build & Deployment](https://github.com/RogerioDoCarmo/RogerioDoCarmo.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/RogerioDoCarmo/RogerioDoCarmo.github.io/actions/workflows/pages/pages-build-deployment)
@@ -32,6 +36,7 @@ and permanently hosts documents I need to keep online.
 - `index.html` — the hub landing page (self-contained, no build step).
 - `mirror_app/privacy-policy.html` — official privacy policy for the **Miroji** app.
   ⚠️ This URL is referenced by app store listings — **do not move or rename it.**
+  Miroji is live on the [App Store](https://apps.apple.com/app/id6774924907) (iOS); Android is in development.
 
 ## Notes
 
