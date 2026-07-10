@@ -2,7 +2,7 @@
 
 ## 📱 Miroji is available now
 
-[![Download on the App Store](https://toolbox.marketingtools.apple.com/api/badges/download-on-the-app-store/black/en-us?size=165x55)](https://apps.apple.com/app/id6774924907)
+<a href="https://apps.apple.com/app/id6774924907"><img src="https://toolbox.marketingtools.apple.com/api/badges/download-on-the-app-store/black/en-us?size=165x55" alt="Download on the App Store" height="55"></a>
 <a href="https://rogeriodocarmo.com"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en-play-badge.png" alt="Get it on Google Play" height="55"></a>
 
 <!-- Build & Deployment Status -->
