@@ -3,7 +3,7 @@
 ## 📱 Miroji is available now
 
 [![Download on the App Store](https://toolbox.marketingtools.apple.com/api/badges/download-on-the-app-store/black/en-us?size=165x55)](https://apps.apple.com/app/id6774924907)
-[![Get it on Google Play](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://rogeriodocarmo.com)
+<a href="https://rogeriodocarmo.com"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="55"></a>
 
 <!-- Build & Deployment Status -->
 
@@ -37,7 +37,8 @@ and permanently hosts documents I need to keep online.
 - `index.html` — the hub landing page (self-contained, no build step).
 - `mirror_app/privacy-policy.html` — official privacy policy for the **Miroji** app.
   ⚠️ This URL is referenced by app store listings — **do not move or rename it.**
-  Miroji is live on the [App Store](https://apps.apple.com/app/id6774924907) (iOS); Android is in development.
+  Miroji is live on the [App Store](https://apps.apple.com/app/id6774924907) (iOS); Android is in
+  development — the [Android link](https://rogeriodocarmo.com) redirects to the main site for now.
 
 ## Notes
 
